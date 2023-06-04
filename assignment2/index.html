@@ -1,0 +1,322 @@
+<!-- Made corrections from Assignment 1 based on Class 2 lectures-->
+<!-- Moved all images to it's own folder -->
+<!-- reorganized the order of the website content and corrected the flow of css accordingly -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" />
+    <title>Urban Coffee Co. | Blog</title>
+  </head>
+
+  <body>
+    <nav class="flex">
+      <div class="flex">
+        <img src="./img/logo.png" alt="Brand Logo" />
+        <a href="#"><h2>Urban Coffee Co.</h2></a>
+      </div>
+      <ul>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="flex">
+      <div class="flex col">
+        <h1>
+          <mark> From <b>Beans</b> to <i>Brews:</i> </mark>
+        </h1>
+
+        <p>
+          Discover a world of possibilities. Take the leap and unwrap our
+          captivating journey today!
+        </p>
+
+        <button><a href="#blogs">Explore</a></button>
+      </div>
+    </header>
+
+    <main id="blogs">
+      <article id="aboutus" class="aboutus flex row container">
+        <figure class="flex row">
+          <figcaption>
+            <h2>About Us</h2>
+            <p>
+              Welcome to Urban Coffee Co., the ultimate destination for coffee
+              enthusiasts. We are a coffee blog dedicated to sharing our passion
+              for all things coffee. Discover expertly curated articles, brewing
+              techniques, and exciting recipes. Join our community and explore
+              our relevant coffee courses, empowering you to master the art of
+              brewing. Let's dive into the world of coffee together!
+            </p>
+          </figcaption>
+          <img src="./img/blog.jpg" alt="" />
+        </figure>
+      </article>
+
+      <section class="brands flex row">
+        <img src="./img/Asset 10.png" alt="" />
+        <img src="./img/Asset 11.png" alt="" />
+        <img src="./img/Asset 12.png" alt="" />
+        <img src="./img/Asset 13.png" alt="" />
+        <img src="./img/Asset 14.png" alt="" />
+        <img src="./img/Asset 15.png" alt="" />
+        <img src="./img/Asset 16.png" alt="" />
+        <img src="./img/Asset 17.png" alt="" />
+      </section>
+
+      <div class="articles container flex row">
+        <figure class="barticle flex row" id="blog">
+          <img src="./img/beans.jpg" alt="" />
+          <figcaption class="flex col">
+            <h3>Coffee Bean Type</h3>
+            <span><b>Aug 28 </b><i>Ethan Caldwell</i></span>
+            <p>
+              Coffee beans come in two main types: Arabica and Robusta. Arabica
+              beans are the most popular type, and are known for their smooth,
+              sweet flavor. Robusta beans are less expensive, and have a
+              stronger, more bitter flavor. Coffee blends often contain a mix of
+              Arabica and Robusta beans to achieve a well-rounded taste.<br /><br />
+              Each type of bean brings its unique characteristics, allowing
+              coffee enthusiasts to explore a diverse range of flavors and
+              aromas. Whether you prefer the delicate nuances of Arabica or the
+              boldness of Robusta, understanding coffee bean types can elevate
+              your coffee-drinking experience to new heights.
+            </p>
+
+            <a href=""
+              ><br />
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; read
+              more
+            </a>
+          </figcaption>
+        </figure>
+
+        <div class="sarticle flex col">
+          <figure class="flex row">
+            <img src="./img/recipe.jpg" alt="" />
+            <figcaption class="flex col">
+              <h3>3 Delicious Coffee Recipes</h3>
+              <span><b>Feb 19 </b><i>Natalie Sullivan</i></span>
+              <p>
+                Experience the delight of a creamy caramel macchiato and the
+                refreshing indulgence of a mocha mint iced coffee.
+              </p>
+
+              <a href=""
+                ><br />
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; read
+                more
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="flex">
+            <img src="./img/benefit.jpg" alt="" />
+            <figcaption class="flex col">
+              <h3>Coffee Benefits</h3>
+              <span><b>Apr 15 </b><i>Benjamin Anderson</i></span>
+              <p>
+                Moderate coffee consumption offers cognitive enhancement,
+                mood-boosting effects, disease risk reduction, and improved
+                physical performance.
+              </p>
+
+              <a href=""
+                ><br />
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; read
+                more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <section class="gallery grid-container">
+        <img class="gr1" src="./img/1.webp" alt="" />
+        <img class="gr2" src="./img/2.jpg" alt="" />
+        <img class="gr3" src="./img/3.webp" alt="" />
+        <img class="gr4" src="./img/4.jpg" alt="" />
+        <img class="gr5" src="./img/5.webp" alt="" />
+        <img class="gr6" src="./img/6.jpg" alt="" />
+        <img class="gr7" src="./img/7.jpg" alt="" />
+        <img class="gr8" src="./img/8.jpg" alt="" />
+      </section>
+
+      <section class="flex col cards articles">
+        <h2 id="courses">Courses</h2>
+        <div class="flex row">
+          <figure class="flex col">
+            <img src="./img/espresso.jpg" alt="" />
+            <figcaption class="flex col">
+              <h3>3 Best Espresso Maker</h3>
+              <span><b>Jan 5 </b><i>Benjamin Anderson</i></span>
+              <p>
+                Top-notch espresso makers deliver rich flavors, convenient
+                brewing, and café-like perfection, enhancing your coffee
+                experience.
+              </p>
+
+              <a href=""
+                ><br />
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; read
+                more
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="flex col">
+            <img src="./img/brew.jpg" alt="" />
+            <figcaption class="flex col">
+              <h3>Coffee Brewing Methods</h3>
+              <span><b>Mar 2 </b><i>Ethan Caldwell</i></span>
+              <p>
+                Top-notch espresso makers deliver rich flavors, convenient
+                brewing, and café-like perfection, enhancing your coffee
+                experience.
+              </p>
+
+              <a href=""
+                ><br />
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; read
+                more
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="flex col">
+            <img src="./img/productivity.jpg" alt="" />
+            <figcaption class="flex col">
+              <h3>Coffee & Productivity</h3>
+              <span><b>Dec 28 </b><i>Natalie Sullivan</i></span>
+              <p>
+                Top-notch espresso makers deliver rich flavors, convenient
+                brewing, and café-like perfection, enhancing your coffee
+                experience.
+              </p>
+
+              <br /><a href="">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; read
+                more
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="flex col">
+            <img src="./img/roasting.jpg" alt="" />
+            <figcaption class="flex col">
+              <h3>The Science of Roasting</h3>
+              <span><b>July 15 </b><i>Jason Portman</i></span>
+              <p>
+                Top-notch espresso makers deliver rich flavors, convenient
+                brewing, and café-like perfection, enhancing your coffee
+                experience.
+              </p>
+
+              <a href=""
+                ><br />
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; read
+                more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container flex row">
+        <section class="brand flex col">
+          <img src="./img/logo.png".jpg" alt="" />
+          <h2>Urban Coffee <br />Co.</h2>
+        </section>
+
+        <section class="flex col">
+          <h2>About Us</h2>
+          <ul>
+            <li><b>Urban Coffee Co.</b></li>
+            <li>17335 Mountainview Ln, <br />Aspen Springs, CO 98765</li>
+            <li>(555) 123-4567</li>
+            <li>contact@urcoco.com</li>
+          </ul>
+
+          <ul class="links flex row">
+            <li><a href="">About</a></li>
+            |
+            <li><a href="">Courses</a></li>
+            |
+            <li><a href="">Contact</a></li>
+          </ul>
+        </section>
+
+        <section class="map flex col">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d332449.20226413023!2d-105.79982363173403!3d39.2728414141839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874014749b1856b7%3A0xc75483314990a7ff!2sColorado!5e0!3m2!1sen!2sus!4v1685724839353!5m2!1sen!2sus"
+            width="200px"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <section class="contact flex col">
+          <div>
+            <h2>Newsletter</h2>
+            <p>Subscribe now for the latest updates!</p>
+            <form>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="socialmedia">
+            <ul class="flex">
+              <li>
+                <a href="https://instagram.com" target="_blank"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://facebook.com" target="_blank"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://pinterest.com" target="_blank"
+                  ><i class="fa-brands fa-square-pinterest"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/c7dcac8717.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
