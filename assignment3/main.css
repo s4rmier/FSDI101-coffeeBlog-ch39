@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&family=Pacifico&family=Playfair:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --pri-bg-col: #e4bb97;
+  --section-col: #63372c;
+  --highlight-col: #f6eadf;
+  --pri-type-col: #01161e;
+  --sec-type-col: #63372c;
+}
+:root p {
+  font-family: "Playfair";
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+:root .active {
+  border-bottom: 2px solid var(--section-col);
+}
+:root .flex {
+  display: flex;
+}
+:root .col {
+  flex-direction: column;
+}
+:root .row {
+  flex-direction: row;
+}
+:root .justify {
+  justify-content: center;
+}
+:root .align {
+  align-items: center;
+}
+:root .container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+:root a {
+  color: var(--sec-type-col);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+:root .centermask {
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--sec-type-col);
+  border: none;
+  transition: all 160ms ease-in-out;
+  scroll-behavior: smooth;
+}
+
+mark {
+  padding: 0px 16px;
+  background-color: rgba(246, 234, 223, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+nav {
+  position: fixed;
+  z-index: 9;
+  top: 60px;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(228, 187, 151);
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+nav div {
+  align-items: center;
+  justify-content: center;
+}
+nav div img {
+  height: 30px;
+  width: 30px;
+  margin: 0px 20px;
+}
+nav div h2 {
+  font-family: "Poppins";
+  color: var(--sec-type-col);
+  font-size: 1.25rem;
+  text-transform: none;
+}
+nav ul li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+button.button {
+  padding: 3px 10px;
+  min-width: 80px;
+  align-self: center;
+  margin: 20px 60px;
+  background-color: var(--sec-type-col);
+  border: 1px solid var(--pri-type-col);
+  border-radius: 6px;
+}
+button.button a {
+  color: var(--pri-bg-col);
+  font-weight: 600;
+  font-size: 1rem;
+}
+button.button a i {
+  color: var(--pri-bg-col);
+  padding-left: 10px;
+}
+
+nav:hover {
+  filter: drop-shadow(2px 2px 0px var(--section-col));
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+#bindex header {
+  background-image: url(./img/headerbg.jpg);
+}
+#bindex header div {
+  position: relative;
+  left: 45%;
+  top: 45%;
+  width: 50%;
+}
+#bindex header div h1 {
+  font-weight: 600;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  border-bottom: 3px solid var(--section-col);
+}
+#bindex header div p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+#babout header {
+  background-image: url(./img/team.jpg);
+  align-items: center;
+  justify-content: center;
+}
+#babout header h1 {
+  text-align: center;
+}
+#babout header div.headercon {
+  width: 50%;
+  background-color: rgba(246, 234, 223, 0.75);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 10px;
+}
+#babout header div.headercon img {
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
+}
+#babout header div.headercon div {
+  align-items: center;
+  justify-content: center;
+}
+#babout header div.headercon div p {
+  line-height: 1;
+  margin: 20px;
+  font-weight: 600;
+}
+
+main div.backtotop {
+  height: 2.5rem;
+  position: fixed;
+  z-index: 9;
+  font-size: 2.5rem;
+  bottom: 30px;
+  right: 30px;
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+main div.backtotop:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+#bindex main {
+  padding: 20px 0px 0px;
+}
+#bindex main article.aboutus figure {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#bindex main article.aboutus figure img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-mask-image: url(./img/mask1.svg);
+          mask-image: url(./img/mask1.svg);
+  margin: 0px 20px;
+}
+#bindex main article.aboutus figure figcaption {
+  width: 50%;
+  margin: 0px 20px;
+}
+#bindex main article.aboutus figure figcaption h2 {
+  width: 50%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--section-col);
+}
+#bindex main article.aboutus figure figcaption p {
+  line-height: 1;
+  margin: 20px 0px;
+}
+#bindex main .brands {
+  background-color: var(--section-col);
+  min-height: 200px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 20px 0px;
+}
+#bindex main .brands img {
+  height: 100px;
+  margin: 10px 20px;
+  padding: 10px;
+}
+#bindex main .articles {
+  justify-content: space-around;
+}
+#bindex main .articles figure {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#bindex main .articles figure figcaption {
+  padding: 20px;
+}
+#bindex main .articles figure figcaption a {
+  align-self: flex-end;
+  margin: 0px 20px;
+}
+#bindex main .articles figure figcaption h3 {
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+#bindex main .articles figure figcaption span {
+  font-size: 0.75rem;
+  line-height: 0.85rem;
+  color: var(--pri-bg-col);
+  opacity: 0.75;
+  margin: 5px 0px 10px;
+}
+#bindex main .articles figure figcaption p {
+  border-top: 1px solid var(--sec-type-col);
+  padding-top: 5px;
+  line-height: 1.25rem;
+}
+#bindex main .articles .barticle {
+  width: 60%;
+  min-height: 480px;
+}
+#bindex main .articles .barticle img {
+  height: 100%;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bindex main .articles .barticle figcaption {
+  padding: 20px;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#bindex main .articles .sarticle {
+  width: 40%;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin: 10px 0px;
+}
+#bindex main .articles .sarticle img {
+  height: 300px;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bindex main .grid-container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "a a b c" "a a e f" "g d h h";
+  grid-template-columns: auto;
+  grid-template-rows: 200px 200px 200px;
+}
+#bindex main .grid-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bindex main .grid-container .gr1 {
+  grid-area: a;
+}
+#bindex main .grid-container .gr2 {
+  grid-area: b;
+}
+#bindex main .grid-container .gr3 {
+  grid-area: c;
+}
+#bindex main .grid-container .gr4 {
+  grid-area: d;
+}
+#bindex main .grid-container .gr5 {
+  grid-area: e;
+}
+#bindex main .grid-container .gr6 {
+  grid-area: f;
+}
+#bindex main .grid-container .gr7 {
+  grid-area: g;
+}
+#bindex main .grid-container .gr8 {
+  grid-area: h;
+}
+#bindex main section.cards {
+  width: 90%;
+  margin: 0px auto;
+}
+#bindex main section.cards h2 {
+  text-align: center;
+  margin: 20px;
+}
+#bindex main section.cards figure {
+  margin: 0px 10px 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#bindex main section.cards figure img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bindex main section.cards figure figcaption p {
+  margin: 10px 0px;
+}
+#bindex main section.cards figure figcaption h4 {
+  align-self: flex-end;
+}
+
+#babout main {
+  position: relative;
+}
+#babout main div.verticalline {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  left: -50%;
+  border-right: 2px dashed rgba(246, 234, 223, 0.75);
+  height: 100%;
+}
+#babout main div.strip {
+  width: 100%;
+  background-color: var(--section-col);
+  min-height: 240px;
+}
+#babout main div.strip p {
+  width: 80%;
+  color: var(--pri-bg-col);
+  position: relative;
+  isolation: isolate;
+  font-style: italic;
+  font-weight: 100;
+}
+#babout main div.strip p::before {
+  content: '"';
+  z-index: -1;
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  font-size: 7.5rem;
+  color: rgba(228, 187, 151, 0.1);
+  font-family: "Pacifico";
+}
+#babout main section.mainsection {
+  overflow: hidden;
+  padding: 20px 0px;
+}
+#babout main section.mainsection figure img {
+  margin: 20px 40px;
+  width: 360px;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#babout main section.mainsection figure figcaption {
+  width: 40%;
+}
+#babout main section.mainsection figure figcaption h3 {
+  margin: 10px 0px;
+}
+#babout main section.mainsection figure figcaption p {
+  isolation: isolate;
+  position: relative;
+  padding: 0px 20px;
+  border-left: 2px solid var(--pri-bg-col);
+}
+#babout main section.mainsection figure figcaption p::before {
+  z-index: -1;
+  color: rgba(228, 187, 151, 0.15);
+  font-size: 30rem;
+  position: absolute;
+  top: -300px;
+  left: -100px;
+}
+#babout main .sub1 {
+  position: relative;
+  left: -10%;
+}
+#babout main .sub1 img {
+  -webkit-mask-image: url(./img/mask1.svg);
+          mask-image: url(./img/mask1.svg);
+}
+#babout main .sub1 figcaption p::before {
+  content: "1";
+}
+#babout main .sub2 {
+  position: relative;
+  left: 10%;
+}
+#babout main .sub2 img {
+  -webkit-mask-image: url(./img/mask2.svg);
+          mask-image: url(./img/mask2.svg);
+}
+#babout main .sub2 figcaption p::before {
+  content: "2";
+}
+#babout main .sub3 {
+  position: relative;
+  left: -10%;
+}
+#babout main .sub3 img {
+  -webkit-mask-image: url(./img/mask3.svg);
+          mask-image: url(./img/mask3.svg);
+}
+#babout main .sub3 figcaption p::before {
+  content: "3";
+}
+#babout main .sub4 {
+  position: relative;
+  left: 10%;
+}
+#babout main .sub4 img {
+  -webkit-mask-image: url(./img/mask4.svg);
+          mask-image: url(./img/mask4.svg);
+}
+#babout main .sub4 figcaption p::before {
+  content: "4";
+}
+#babout main .sub5 {
+  position: relative;
+  left: -10%;
+}
+#babout main .sub5 img {
+  -webkit-mask-image: url(./img/mask4.svg);
+          mask-image: url(./img/mask4.svg);
+}
+#babout main .sub5 figcaption p::before {
+  content: "5";
+}
+
+footer {
+  margin-top: 10px;
+  padding: 40px 20px;
+  width: 100%;
+  filter: drop-shadow(0px -5px 40px var(--sec-type-col));
+  background-color: var(--pri-bg-col);
+}
+footer section {
+  margin: 0px 10px;
+  width: 25%;
+  min-height: 200px;
+}
+footer section h2 {
+  margin: 10px 0px;
+}
+footer section p,
+footer section ul li {
+  font-family: "Poppins";
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+footer section ul.links {
+  margin: 10px 0px;
+}
+footer section ul.links li {
+  font-size: 0.75rem;
+  margin: 0px 6px;
+}
+footer section ul.links li:hover {
+  border-bottom: 2px solid var(--sec-type-col);
+  transform-origin: bottom;
+}
+footer div.container {
+  justify-content: space-between;
+}
+footer div.container section.brand {
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+footer div.container section.brand a h2 {
+  font-family: "Poppins";
+  text-transform: none;
+  text-align: center;
+  line-height: 1.5rem;
+}
+footer div.container section.brand a img {
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: multiply;
+  margin: 10px 0px;
+}
+footer div.container section.map {
+  align-items: center;
+}
+footer div.container section.map iframe {
+  border-radius: 50%;
+  height: 200px;
+}
+footer div.container section.contact form {
+  margin: 10px 0px;
+}
+footer div.container section.contact form input {
+  padding: 5px;
+  width: 60%;
+}
+footer div.container section.contact form button.footerbutton {
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: var(--sec-type-col);
+  color: var(--pri-bg-col);
+  border: 1px solid var(--pri-type-col);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+footer div.socialmedia ul {
+  justify-content: center;
+}
+footer div.socialmedia ul li {
+  margin: 10px;
+  display: inline;
+  font-size: 1.75rem;
+}
+footer div.socialmedia ul li:hover {
+  scale: 1.25;
+  border-bottom: 2px solid var(--sec-type-col);
+  transform-origin: bottom;
+}/*# sourceMappingURL=main.css.map */
