@@ -47,7 +47,7 @@
   a {
     color: var(--sec-type-col);
     text-transform: uppercase;
-    font-weight: 600;
+    // font-weight: 600;
   }
 
   .centermask {
@@ -109,6 +109,7 @@ nav {
     li {
       display: inline;
       margin: 0px 10px;
+      font-weight: 600;
     }
   }
 }
@@ -123,11 +124,11 @@ button.button {
   border-radius: 6px;
   color: var(--highlight-col);
   a {
-    color: var(--pri-bg-col);
-    font-weight: 600;
+    color: var(--highlight-col);
+    // font-weight: 600;
     font-size: 1rem;
     i {
-      color: var(--pri-bg-col);
+      color: var(--highlight-col);
       padding-left: 10px;
     }
   }
@@ -166,6 +167,7 @@ header {
 
 #babout header {
   background-image: url(./img/team.jpg);
+  background-attachment: fixed;
   align-items: center;
   justify-content: center;
   h1 {
@@ -533,6 +535,113 @@ main {
   }
 }
 
+#bcourses {
+  header {
+    background-image: url(./img/courses.jpg);
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      text-align: center;
+    }
+    div.headercon {
+      width: 50%;
+      background-color: rgba($color: #f6eadf, $alpha: 0.5);
+      backdrop-filter: blur(3px);
+      padding: 10px;
+      img {
+        width: 200px;
+        object-fit: contain;
+        padding: 20px;
+      }
+      div {
+        align-items: center;
+        justify-content: center;
+        p {
+          line-height: 1;
+          margin: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  main {
+    div.strip {
+      width: 100%;
+      background-color: var(--section-col);
+      min-height: 240px;
+      p {
+        width: 80%;
+        color: var(--pri-bg-col);
+        position: relative;
+        isolation: isolate;
+        font-style: italic;
+        font-weight: 100;
+      }
+
+      p::before {
+        content: '"';
+        z-index: -1;
+        position: absolute;
+        top: -30px;
+        left: -60px;
+        font-size: 7.5rem;
+        color: rgba($color: #e4bb97, $alpha: 0.1);
+        font-family: "Pacifico";
+      }
+
+      h2 {
+        margin: 20px 0px;
+        color: var(--pri-bg-col);
+      }
+    }
+
+    section.coursecontainer {
+      padding: 40px;
+      figure.coursecards {
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: var(--highlight-col);
+        border-radius: 10px;
+        img {
+          height: 300px;
+          width: 35%;
+          object-fit: cover;
+        }
+        figcaption {
+          padding: 20px;
+          div.buttons {
+            justify-self: flex-end;
+            justify-content: flex-end;
+            button {
+              text-transform: uppercase;
+              margin: 10px;
+              padding: 5px 10px;
+            }
+          }
+          ul {
+            margin: 10px 0px;
+            h3 {
+              margin-right: 10px;
+            }
+            li {
+              scale: 0.75;
+              font-size: 1rem;
+              // margin: 0px px;
+              padding: 5px 10px;
+              background-color: var(--sec-type-col);
+              color: var(--highlight-col);
+              border-radius: 5px;
+              font-family: "Poppins";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 #bcontact {
   main {
     height: 80vh;
@@ -582,9 +691,11 @@ main {
           width: 100%;
         }
         button {
-          color: var(--pri-bg-col);
+          align-self: flex-end;
+          margin: 40px;
+          color: var(--highlight-col);
           text-transform: uppercase;
-          font-weight: 600;
+          // font-weight: 600;
           font-size: 1rem;
         }
       }

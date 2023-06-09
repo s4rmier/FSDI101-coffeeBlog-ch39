@@ -37,7 +37,6 @@
 :root a {
   color: var(--sec-type-col);
   text-transform: uppercase;
-  font-weight: 600;
 }
 :root .centermask {
   -webkit-mask-repeat: no-repeat;
@@ -98,6 +97,7 @@ nav div h2 {
 nav ul li {
   display: inline;
   margin: 0px 10px;
+  font-weight: 600;
 }
 
 button.button {
@@ -111,12 +111,11 @@ button.button {
   color: var(--highlight-col);
 }
 button.button a {
-  color: var(--pri-bg-col);
-  font-weight: 600;
+  color: var(--highlight-col);
   font-size: 1rem;
 }
 button.button a i {
-  color: var(--pri-bg-col);
+  color: var(--highlight-col);
   padding-left: 10px;
 }
 
@@ -153,6 +152,7 @@ header {
 
 #babout header {
   background-image: url(./img/team.jpg);
+  background-attachment: fixed;
   align-items: center;
   justify-content: center;
 }
@@ -492,6 +492,107 @@ main div.backtotop:hover {
   content: "5";
 }
 
+#bcourses header {
+  background-image: url(./img/courses.jpg);
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+#bcourses header h1 {
+  text-align: center;
+}
+#bcourses header div.headercon {
+  width: 50%;
+  background-color: rgba(246, 234, 223, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 10px;
+}
+#bcourses header div.headercon img {
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
+}
+#bcourses header div.headercon div {
+  align-items: center;
+  justify-content: center;
+}
+#bcourses header div.headercon div p {
+  line-height: 1;
+  margin: 20px;
+  font-weight: 600;
+}
+#bcourses main div.strip {
+  width: 100%;
+  background-color: var(--section-col);
+  min-height: 240px;
+}
+#bcourses main div.strip p {
+  width: 80%;
+  color: var(--pri-bg-col);
+  position: relative;
+  isolation: isolate;
+  font-style: italic;
+  font-weight: 100;
+}
+#bcourses main div.strip p::before {
+  content: '"';
+  z-index: -1;
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  font-size: 7.5rem;
+  color: rgba(228, 187, 151, 0.1);
+  font-family: "Pacifico";
+}
+#bcourses main div.strip h2 {
+  margin: 20px 0px;
+  color: var(--pri-bg-col);
+}
+#bcourses main section.coursecontainer {
+  padding: 40px;
+}
+#bcourses main section.coursecontainer figure.coursecards {
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: var(--highlight-col);
+  border-radius: 10px;
+}
+#bcourses main section.coursecontainer figure.coursecards img {
+  height: 300px;
+  width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bcourses main section.coursecontainer figure.coursecards figcaption {
+  padding: 20px;
+}
+#bcourses main section.coursecontainer figure.coursecards figcaption div.buttons {
+  justify-self: flex-end;
+  justify-content: flex-end;
+}
+#bcourses main section.coursecontainer figure.coursecards figcaption div.buttons button {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 5px 10px;
+}
+#bcourses main section.coursecontainer figure.coursecards figcaption ul {
+  margin: 10px 0px;
+}
+#bcourses main section.coursecontainer figure.coursecards figcaption ul h3 {
+  margin-right: 10px;
+}
+#bcourses main section.coursecontainer figure.coursecards figcaption ul li {
+  scale: 0.75;
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: var(--sec-type-col);
+  color: var(--highlight-col);
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+
 #bcontact main {
   height: 80vh;
   width: 100%;
@@ -541,9 +642,10 @@ main div.backtotop:hover {
   width: 100%;
 }
 #bcontact main form fieldset button {
-  color: var(--pri-bg-col);
+  align-self: flex-end;
+  margin: 40px;
+  color: var(--highlight-col);
   text-transform: uppercase;
-  font-weight: 600;
   font-size: 1rem;
 }
 
